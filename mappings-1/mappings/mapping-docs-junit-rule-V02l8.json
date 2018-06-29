@@ -1,0 +1,24 @@
+{
+  "id" : "ac7d8a86-d5db-3038-9aaa-ddb49cc92627",
+  "request" : {
+    "url" : "/docs/junit-rule/",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-docs-junit-rule-V02l8.txt",
+    "headers" : {
+      "Server" : "GitHub.com",
+      "Date" : "Fri, 29 Jun 2018 04:21:06 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Transfer-Encoding" : "chunked",
+      "Last-Modified" : "Mon, 28 May 2018 19:26:30 GMT",
+      "Vary" : "Accept-Encoding",
+      "Access-Control-Allow-Origin" : "*",
+      "Expires" : "Fri, 29 Jun 2018 04:31:06 GMT",
+      "Cache-Control" : "max-age=600",
+      "X-GitHub-Request-Id" : "E1C8:79BF:2C3265:3C51F0:5B35B3B2"
+    }
+  },
+  "uuid" : "ac7d8a86-d5db-3038-9aaa-ddb49cc92627"
+}

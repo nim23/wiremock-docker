@@ -1,0 +1,24 @@
+{
+  "id" : "39c8354a-7d9a-30af-a1ed-8413fc1e87a8",
+  "request" : {
+    "url" : "/about/",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-about-vNoHt.txt",
+    "headers" : {
+      "Server" : "GitHub.com",
+      "Date" : "Fri, 29 Jun 2018 04:18:50 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Transfer-Encoding" : "chunked",
+      "Last-Modified" : "Mon, 28 May 2018 19:26:30 GMT",
+      "Vary" : "Accept-Encoding",
+      "Access-Control-Allow-Origin" : "*",
+      "Expires" : "Fri, 29 Jun 2018 04:28:50 GMT",
+      "Cache-Control" : "max-age=600",
+      "X-GitHub-Request-Id" : "E09E:79BE:162502:1E01E5:5B35B32A"
+    }
+  },
+  "uuid" : "39c8354a-7d9a-30af-a1ed-8413fc1e87a8"
+}

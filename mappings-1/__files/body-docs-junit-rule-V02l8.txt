@@ -19,7 +19,7 @@
 
 
 
-<title>Home - WireMock User Documentation - WireMock</title>
+<title>The JUnit 4.x Rule - WireMock</title>
 
 
 
@@ -27,16 +27,16 @@
 
 
 
-<meta name="description" content="WireMock’s user documentation.">
+<meta name="description" content="The WireMock JUnit rule.">
 
 <meta property="og:locale" content="en-US">
 <meta property="og:site_name" content="WireMock">
-<meta property="og:title" content="Home - WireMock User Documentation">
+<meta property="og:title" content="The JUnit 4.x Rule">
 
 
 
 
-  <meta property="og:description" content="WireMock’s user documentation.">
+  <meta property="og:description" content="The WireMock JUnit rule.">
 
 
 
@@ -53,10 +53,10 @@
   <meta property="og:type" content="article">
   <meta property="article:published_time" content="2018-05-28T20:26:19+01:00">
   
-    <link rel="next" href="/docs/java-usage/" title="Java (Non-JUnit) Usage">
+    <link rel="next" href="/docs/proxying/" title="Proxying">
   
   
-    <link rel="prev" href="/docs/https/" title="HTTPS">
+    <link rel="prev" href="/docs/java-usage/" title="Java (Non-JUnit) Usage">
   
 
 
@@ -228,7 +228,8 @@
       </a>
       
       <li>
-        <a href="/docs/junit-rule/">
+        <a href="/docs/junit-rule/" class="nav__list-item--selected">
+        
 
         The JUnit 4.x Rule
       </a>
@@ -347,31 +348,98 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Home - WireMock User Documentation">
-    <meta itemprop="description" content="WireMock is an HTTP mock server. At its core it is web server that can be primed to serve canned responses to particular requests (stubbing) andthat captures incoming requests so that they can be checked later (verification).">
+    <meta itemprop="headline" content="The JUnit 4.x Rule">
+    <meta itemprop="description" content="The JUnit rule provides a convenient way to include WireMock in yourtest cases. It handles the lifecycle for you, starting the server beforeeach test method and stopping afterwards.">
     <meta itemprop="datePublished" content="May 28, 2018">
     
 
     <div class="page__inner-wrap">
       <header>
-        <h1 class="page__title" itemprop="headline">Home - WireMock User Documentation
+        <h1 class="page__title" itemprop="headline">The JUnit 4.x Rule
 </h1>
       </header>
 
       <section class="page__content" itemprop="text">
-        <p>WireMock is an HTTP mock server. At its core it is web server that can be primed to serve canned responses to particular requests (stubbing) and
-that captures incoming requests so that they can be checked later (verification).</p>
+        <p>The JUnit rule provides a convenient way to include WireMock in your
+test cases. It handles the lifecycle for you, starting the server before
+each test method and stopping afterwards.</p>
 
-<p>It also has an assortment of other useful features including record/playback of interactions with other APIs, injection of faults and delays,
-simulation of stateful behaviour.</p>
+<h2 id="basic-usage">Basic usage</h2>
 
-<p>It can be used as a library by any JVM application, or run as a standalone process either on the same host as the system under test or a remote server.</p>
+<p>To make WireMock available to your tests on its default port (8080):</p>
 
-<p>All of WireMock’s features are accessible via its REST (JSON) interface and its Java API. Additionally, stubs can be configured via JSON files.</p>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Rule</span>
+<span class="kd">public</span> <span class="n">WireMockRule</span> <span class="n">wireMockRule</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WireMockRule</span><span class="o">();</span>
+</code></pre>
+</div>
 
-<p>If you have any questions that aren’t answered here please post them on the <a href="https://groups.google.com/forum/#!forum/wiremock-user">mailing list</a>.</p>
+<p>The rule’s constructor can take an <code class="highlighter-rouge">Options</code> instance to override
+various settings. An <code class="highlighter-rouge">Options</code> implementation can be created via the
+<code class="highlighter-rouge">WireMockConfiguration.options()</code> builder:</p>
 
-<p>Ready to try it? Head to the <a href="/docs/getting-started/">Getting Started</a> page.</p>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Rule</span>
+<span class="kd">public</span> <span class="n">WireMockRule</span> <span class="n">wireMockRule</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WireMockRule</span><span class="o">(</span><span class="n">options</span><span class="o">().</span><span class="na">port</span><span class="o">(</span><span class="mi">8888</span><span class="o">).</span><span class="na">httpsPort</span><span class="o">(</span><span class="mi">8889</span><span class="o">));</span>
+</code></pre>
+</div>
+
+<p>See <a href="/docs/configuration/">Configuration</a> for details.</p>
+
+<h2 id="unmatched-requests">Unmatched requests</h2>
+
+<p>The JUnit rule will verify that all requests received during the course of a test case are served by a configured stub, rather than the default 404. If any are not
+a <code class="highlighter-rouge">VerificationException</code> is thrown, failing the test. This behaviour can be disabled by passing an extra constructor flag:</p>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Rule</span>
+<span class="kd">public</span> <span class="n">WireMockRule</span> <span class="n">wireMockRule</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WireMockRule</span><span class="o">(</span><span class="n">options</span><span class="o">().</span><span class="na">port</span><span class="o">(</span><span class="mi">8888</span><span class="o">),</span> <span class="kc">false</span><span class="o">);</span>
+</code></pre>
+</div>
+
+<h2 id="other-rule-configurations">Other @Rule configurations</h2>
+
+<p>With a bit more effort you can make the WireMock server continue to run
+between test cases. This is easiest in JUnit 4.10:</p>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@ClassRule</span>
+<span class="nd">@Rule</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="n">WireMockClassRule</span> <span class="n">wireMockRule</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WireMockClassRule</span><span class="o">(</span><span class="mi">8089</span><span class="o">);</span>
+</code></pre>
+</div>
+
+<p>Unfortunately JUnit 4.11 and above prohibits <code class="highlighter-rouge">@Rule</code> on static members so a
+slightly more verbose form is required:</p>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@ClassRule</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="n">WireMockClassRule</span> <span class="n">wireMockRule</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WireMockClassRule</span><span class="o">(</span><span class="mi">8089</span><span class="o">);</span>
+
+<span class="nd">@Rule</span>
+<span class="kd">public</span> <span class="n">WireMockClassRule</span> <span class="n">instanceRule</span> <span class="o">=</span> <span class="n">wireMockRule</span><span class="o">;</span>
+</code></pre>
+</div>
+
+<h2 id="accessing-the-stubbing-and-verification-dsl-from-the-rule">Accessing the stubbing and verification DSL from the rule</h2>
+
+<p>In addition to the static methods on the <code class="highlighter-rouge">WireMock</code> class, it is also
+possible to configure stubs etc. via the rule object directly. There are
+two advantages to this - 1) it’s a bit faster as it avoids sending
+commands over HTTP, and 2) if you want to mock multiple services you can
+declare a rule per service but not have to create a client object for
+each e.g.</p>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="nd">@Rule</span>
+<span class="kd">public</span> <span class="n">WireMockRule</span> <span class="n">service1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WireMockRule</span><span class="o">(</span><span class="mi">8081</span><span class="o">);</span>
+
+<span class="nd">@Rule</span>
+<span class="kd">public</span> <span class="n">WireMockRule</span> <span class="n">service2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WireMockRule</span><span class="o">(</span><span class="mi">8082</span><span class="o">);</span>
+
+<span class="nd">@Test</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">bothServicesDoStuff</span><span class="p">(</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">service1</span><span class="o">.</span><span class="na">stubFor</span><span class="o">(</span><span class="n">get</span><span class="o">(</span><span class="n">urlEqualTo</span><span class="o">(</span><span class="s">"/blah"</span><span class="o">)).....);</span>
+    <span class="n">service2</span><span class="o">.</span><span class="na">stubFor</span><span class="o">(</span><span class="n">post</span><span class="o">(</span><span class="n">urlEqualTo</span><span class="o">(</span><span class="s">"/blap"</span><span class="o">)).....);</span>
+
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre>
+</div>
 
         
       </section>

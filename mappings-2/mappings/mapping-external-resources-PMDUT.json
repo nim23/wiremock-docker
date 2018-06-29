@@ -1,0 +1,24 @@
+{
+  "id" : "fc426175-e507-33ab-9765-9ed1274c2acd",
+  "request" : {
+    "url" : "/external-resources/",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-external-resources-PMDUT.txt",
+    "headers" : {
+      "Server" : "GitHub.com",
+      "Date" : "Fri, 29 Jun 2018 04:19:09 GMT",
+      "Content-Type" : "text/html; charset=utf-8",
+      "Transfer-Encoding" : "chunked",
+      "Last-Modified" : "Mon, 28 May 2018 19:26:30 GMT",
+      "Vary" : "Accept-Encoding",
+      "Access-Control-Allow-Origin" : "*",
+      "Expires" : "Fri, 29 Jun 2018 04:29:09 GMT",
+      "Cache-Control" : "max-age=600",
+      "X-GitHub-Request-Id" : "E0C9:79BF:2C19FD:3C2FEC:5B35B33D"
+    }
+  },
+  "uuid" : "fc426175-e507-33ab-9765-9ed1274c2acd"
+}
