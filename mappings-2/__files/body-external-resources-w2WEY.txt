@@ -1,0 +1,410 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>External Resources - WireMock</title>
+
+
+
+
+
+
+
+<meta name="description" content="Extensions, integrations, blog posts and videos about WireMock.">
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="WireMock">
+<meta property="og:title" content="External Resources">
+
+
+
+
+  <meta property="og:description" content="Extensions, integrations, blog posts and videos about WireMock.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Tom Akehurst",
+      "url" : null,
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+
+
+
+  <!-- Google Analytics -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+  {'GTM-WQTGSSM':true});</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-36386229-2', 'auto');
+  ga('require', 'GTM-WQTGSSM');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="WireMock Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Lato|Source+Code+Pro|Cairo" rel="stylesheet">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon3.png">
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg">
+            <a href="/"><img src="/images/wiremock-concept-icon-01.png" style="width: 80px; height: 37px" /></a>
+          </li>
+          
+            
+
+            
+            <li class="masthead__menu-item"><a href="/docs/" title="Docs">Docs</a></li>
+            
+
+          
+            
+
+            
+            <li class="masthead__menu-item"><a href="/about/" title="About">About</a></li>
+            
+
+          
+            
+
+            
+            <li class="masthead__menu-item"><a href="https://github.com/tomakehurst/wiremock" title="GitHub" target="_blank">GitHub</a></li>
+            
+
+          
+            
+
+            
+            <li class="masthead__menu-item"><a href="https://groups.google.com/forum/#!forum/wiremock-user" title="Mailing List" target="_blank">Mailing List</a></li>
+            
+
+          
+            
+
+            
+            <li class="masthead__menu-item"><a href="/external-resources/" title="External Resources">External Resources</a></li>
+            
+
+          
+            
+
+            
+            <li class="masthead__menu-item"><a href="http://consulting.wiremock.org" title="Pro Support">Pro Support</a></li>
+            
+
+          
+
+          <li class="masthead__menu-item">
+            <a href="http://get.mocklab.io/?utm_source=wiremock.org&utm_medium=primary-nav&utm_campaign=mocklab" title="MockLab" target="_blank">
+              <img src="/images/mocklab_logo_transparent.png" style="height: 23px; width: auto; margin-right: 5px; vertical-align: top;" />
+              MockLab
+            </a>
+          </li>
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="External Resources">
+    
+    
+    
+
+    <section class="page__content" itemprop="text">
+      <h1 id="external-resources">External Resources</h1>
+
+<p>Code, articles and videos related to WireMock from around the web.</p>
+
+<h2 id="integrations">Integrations</h2>
+<p>Mark Winteringham wrote a very handy Chrome extension to provide a UI over WireMock:<br />
+<a href="http://www.mwtestconsultancy.co.uk/wiremock-chrome-extension/">http://www.mwtestconsultancy.co.uk/wiremock-chrome-extension/</a></p>
+
+<p>Spring Contract Verifier (previously called Accurest) is a consumer driven contracts tool that generates WireMock stub mappings as
+examples for client testing.
+<a href="http://cloud.spring.io/spring-cloud-contract/">http://cloud.spring.io/spring-cloud-contract/</a></p>
+
+<p>A Spring REST Docs integration for WireMock that generates WireMock stub mappings from your test cases:<br />
+<a href="https://github.com/epages-de/restdocs-wiremock">https://github.com/epages-de/restdocs-wiremock</a></p>
+
+<h2 id="extensions">Extensions</h2>
+<p>Simulate webhooks with this extension:<br />
+<a href="https://github.com/wiremock/wiremock-webhooks-extension">https://github.com/wiremock/wiremock-webhooks-extension</a></p>
+
+<p>Some folks at Open Table have written a response transformer for injecting data from the
+request body into the response:<br />
+<a href="https://github.com/opentable/wiremock-body-transformer">https://github.com/opentable/wiremock-body-transformer</a></p>
+
+<p>In a similar vein, Adam York has written a response transformer utilising Velocity templates:<br />
+<a href="https://github.com/adamyork/wiremock-velocity-transformer">https://github.com/adamyork/wiremock-velocity-transformer</a></p>
+
+<p>Mason Malone has built an extension for matching requests based on the contents of JSON web tokens:<br />
+<a href="https://github.com/MasonM/wiremock-jwt-extension">https://github.com/MasonM/wiremock-jwt-extension</a></p>
+
+<p>Also from Mason, an extension for finding and removing unused stub mappings:<br />
+<a href="https://github.com/MasonM/wiremock-unused-stubs-extension">https://github.com/MasonM/wiremock-unused-stubs-extension</a></p>
+
+<h2 id="other-languages">Other languages</h2>
+
+<p>PHP client by Rowan Hill:<br />
+<a href="https://github.com/rowanhill/wiremock-php">https://github.com/rowanhill/wiremock-php</a></p>
+
+<p>Ruby wrapper by Jeffres S. Morgan:<br />
+<a href="https://rubygems.org/gems/service_mock">https://rubygems.org/gems/service_mock</a></p>
+
+<p>Groovy binding by Tom Jankes:<br />
+<a href="https://github.com/tomjankes/wiremock-groovy">https://github.com/tomjankes/wiremock-groovy</a></p>
+
+<p>Python client by Cody Lee:<br />
+<a href="https://pypi.python.org/pypi/wiremock/1.1.1">https://pypi.python.org/pypi/wiremock/1.1.1</a></p>
+
+<h2 id="articles">Articles</h2>
+
+<p>Sam Edwards has been hugely helpful in getting WireMock onto the Android platform and helping others do so. Here is his blog post explaining
+how to write an Espresso test using WireMock as your app’s back-end:<br />
+<a href="http://handstandsam.com/2016/01/30/running-wiremock-on-android/">http://handstandsam.com/2016/01/30/running-wiremock-on-android/</a></p>
+
+<p>Dusan Dević at Yenlo wrote a useful guide to testing error conditions in the WSO2 ESB using Wiremock:<br />
+<a href="https://www.yenlo.com/blog/wso2torial-error-handling-in-wso2-esb-with-wiremock">https://www.yenlo.com/blog/wso2torial-error-handling-in-wso2-esb-with-wiremock</a></p>
+
+<p>Phill Barber has written a couple of interesting posts about practical testing scenarios with WireMock:<br />
+<a href="http://phillbarber.blogspot.co.uk/2015/05/how-to-write-end-to-end-tests-for-nginx.html">http://phillbarber.blogspot.co.uk/2015/05/how-to-write-end-to-end-tests-for-nginx.html</a><br />
+<a href="http://phillbarber.blogspot.co.uk/2015/02/how-to-test-for-connection-leaks.html">http://phillbarber.blogspot.co.uk/2015/02/how-to-test-for-connection-leaks.html</a></p>
+
+<p>Bas Dijkstra kindly open sourced the content for the workshop he ran on WireMock and REST Assured:<br />
+<a href="http://www.ontestautomation.com/open-sourcing-my-workshop-on-wiremock/">http://www.ontestautomation.com/open-sourcing-my-workshop-on-wiremock/</a></p>
+
+<h2 id="videos">Videos</h2>
+
+<p>Fluent and thorough live-coding demonstration of WireMock delivered by Sam Edwards at DevFest DC:<br />
+<a href="https://youtu.be/x3MvZ8DFrpE">https://youtu.be/x3MvZ8DFrpE</a></p>
+
+<p>Sebastian Daschner presents a step-by-step guide to running your acceptance tests in Kubernetes using WireMock:<br />
+<a href="https://blog.sebastian-daschner.com/entries/acceptance_tests_wiremock_kubernetes">https://blog.sebastian-daschner.com/entries/acceptance_tests_wiremock_kubernetes</a></p>
+
+<p>Interesting and detailed presentation by Lotte Johansen on testing microservices with WireMock at Norway’s top online marketplace:<br />
+<a href="https://www.youtube.com/watch?v=cmJfMnGK-r0">https://www.youtube.com/watch?v=cmJfMnGK-r0</a></p>
+
+<p>Chris Batey did an excellent talk at Skillsmatter in London about building fault tolerant microservices. He showed some practical
+failure testing strategies using WireMock and Saboteur he’d used for real while working at Sky:<br />
+<a href="https://skillsmatter.com/skillscasts/5810-building-fault-tolerant-microservices">https://skillsmatter.com/skillscasts/5810-building-fault-tolerant-microservices</a></p>
+
+<p>Daniel Bryant’s excellent QCon presentation “The Seven Deadly Sins of Microservices” covers the full gamut of microservice anti-patterns seen in the wild, with some sound advice on how to fix them. WireMock and Saboteur get an honourable mention in the testing discussion:<br />
+<a href="https://www.infoq.com/presentations/7-sins-microservices">https://www.infoq.com/presentations/7-sins-microservices</a></p>
+
+<p>The folks at Intuit have built a very impressive and ambitious testing setup, using WireMock to isolate individual services. Here’s a talk they did at AWS:Reinvent:<br />
+<a href="https://www.youtube.com/watch?list=PLhr1KZpdzuke5pqzTvI2ZxwP8-NwLACuU&amp;v=sUsh3EnzKKk">https://www.youtube.com/watch?list=PLhr1KZpdzuke5pqzTvI2ZxwP8-NwLACuU&amp;v=sUsh3EnzKKk</a></p>
+
+<p>Michael Bailey was the first person to publicly demonstrate the possibility of running WireMock on Android. Here’s his presentation at Google’s GTAC conference on
+the testing setup used by his team at Amex:<br />
+<a href="https://www.youtube.com/watch?v=-xQCNf_5NNM">https://www.youtube.com/watch?v=-xQCNf_5NNM</a></p>
+
+<p>Tom and Rob Elliot gave a join talk at Skillsmatter about patterns for readable and scalable tests with WireMock, and an approach for unit testing a
+CDN:<br />
+<a href="https://skillsmatter.com/skillscasts/6853-scalable-management-of-test-data-making-tests-readable">https://skillsmatter.com/skillscasts/6853-scalable-management-of-test-data-making-tests-readable</a></p>
+
+    </section>
+  </article>
+</div>
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    <li><a href="/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 Tom Akehurst. Powered by <a href="http://jekyllrb.com"
+                                                                                                                                                                  rel="nofollow">Jekyll</a> &amp; <a
+  href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+</div>
+
+<div id="dialog" style="display: none">
+  <h2 class="mocklab-popup__title">Looking for super-quick hosted mocks? Try MockLab</h2>
+  <p>Instant mock services on your own public URL, zero code required. Paste, record and generate mock data. Tester-friendly UI.</p>
+</div>
+
+<script type="text/javascript">
+  function setNotificationSeenCookie() {
+    var expiresDate = new Date();
+    expiresDate.setTime(expiresDate.getTime() + (30 * 86400000));
+    document.cookie = "mocklab_notification_seen=true;expires=" + expiresDate.toGMTString() + ";path=/";
+  }
+
+  function sendNavigatedToMockLabEvent(location) {
+    ga('send', 'event', location, 'navigated_to_mocklab', 'Navigated to MockLab', 1);
+  }
+
+  window.onload = function () {
+    $("a[title='MockLab']").click(function() {
+      ga('send', 'event', 'primary_nav', 'mocklab_clicked', 'MockLab clicked', 1);
+      sendNavigatedToMockLabEvent('primary_nav');
+    });
+
+    $("a[title='Consulting Services']").click(function() {
+      ga('send', 'event', 'primary_nav', 'consulting_services_clicked', 'Consulting Services clicked', 1);
+    });
+
+    if (!document.cookie.includes('mocklab_notification_seen') && !window.suppressMockLabPopover) {
+      window.setTimeout(function () {
+        $("#dialog").dialog({
+          dialogClass: 'mocklab-popup',
+          draggable: false,
+          resizable: false,
+          modal: true,
+          show: {
+            effect: 'fade',
+            duration: 1000
+          },
+          buttons: [{
+            class: 'mocklab-popup__confirm-button',
+            text: "Learn More",
+            click: function () {
+              ga('send', 'event', 'mocklab_popup', 'learn_more_clicked', 'Learn More clicked', 1);
+              sendNavigatedToMockLabEvent();
+              window.location.href = "http://get.mocklab.io/?utm_source=wiremock.org&utm_medium=mocklab-popup&utm_campaign=mocklab"
+            }
+          }]
+        });
+
+        setNotificationSeenCookie();
+        ga('send', 'event', 'mocklab_popup', 'mocklab_popup_seen', 'MockLab popup seen', 0);
+      }, 500);
+
+    }
+
+    $("#mocklab-callout-learn-more").click(function() {
+      ga('send', 'event', 'mocklab_homepage_section', 'learn_more_clicked', 'Learn More clicked', 1);
+      sendNavigatedToMockLabEvent('mocklab_homepage_section');
+    });
+
+    $("#mocklab-callout-try-it-now").click(function() {
+      ga('send', 'event', 'mocklab_homepage_section', 'try_it_now_clicked', 'Try It Now clicked', 2);
+      sendNavigatedToMockLabEvent('mocklab_homepage_section');
+    });
+  };
+</script>
+
+      </footer>
+    </div>
+
+    <script src="/assets/js/main.min.js"></script>
+
+
+
+
+  </body>
+</html>
+
