@@ -1,18 +1,15 @@
-# --- WIREMOCK ---
+#!/bin/sh
 
 FROM anapsix/alpine-java:8
-MAINTAINER benitte@ekino.com
-
-RUN apk add --update curl && \
-    rm -rf /var/cache/apk/*
+MAINTAINER nimgrg.dev@gmail.com
 
 ENV WM_PACKAGE wiremock
-ARG WM_VERSION=2.18.0
 
 RUN mkdir /$WM_PACKAGE
 WORKDIR /$WM_PACKAGE
-RUN curl -sSL -o $WM_PACKAGE.jar https://repo1.maven.org/maven2/com/github/tomakehurst/$WM_PACKAGE-standalone/$WM_VERSION/$WM_PACKAGE-standalone-$WM_VERSION.jar
+COPY . /$WM_PACKAGE
+ENTRYPOINT chmod +x /$WM_PACKAGE/copy.sh
 
 EXPOSE 8080
 
-ENTRYPOINT ["java","-jar","wiremock.jar"]
+ENTRYPOINT ["java","-jar","wiremock.jar", "--root-dir", "server"]
